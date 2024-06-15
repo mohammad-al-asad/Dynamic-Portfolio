@@ -102,7 +102,7 @@ function Admin({ data, isLoading }) {
     <>
       <ToastContainer />
       <button
-            className="logout fixed left-5 top-5 bg-red-600 border-red-600 text-white font-[300] md:px-10 p-3 rounded-2xl transition-all hover:bg-red-800 hover:border-red-800 hover:scale-105 grid place-content-center"
+            className="logout fixed left-5 top-5 z-30 bg-red-600 border-red-600 text-white font-[300] md:px-10 p-3 rounded-2xl transition-all hover:bg-red-800 hover:border-red-800 hover:scale-105 grid place-content-center shadow-xl"
             onClick={logout}
           >
             Logout
