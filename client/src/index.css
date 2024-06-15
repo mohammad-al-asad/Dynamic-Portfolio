@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .skillBtn {
+        @apply bg-primary text-sm md:text-lg hover:bg-red-600 text-white font-[400] p-2 rounded-md w-[80px] md:w-[100px] transition-all hover:scale-90;
+    }
+    .form input, textarea, .form button{
+        @apply focus:outline-none w-full md:w-[70%] md:h-[40px] h-[30px] rounded-xl lg:h-[50px] resize-none p-4 border-primary border-x-4
+    }
+    .box{
+        @apply relative h-28 md:h-[250px] w-[100%] overflow-hidden rounded-xl border-2 border-red-600
+    }
+    .layer{
+        @apply absolute bottom-0 left-0 bg-gradient-to-b from-transparent to-primary z-10 flex flex-col justify-center items-center text-white p-3 md:p-6 text-justify md:gap-3 transition-all duration-[400ms] translate-y-full group-hover:translate-y-0 h-full w-full
+    }
+    .layer h2{
+        @apply text-sm md:text-lg font-bold mb-1 md:mb-0
+    }
+    .layer p{
+        @apply text-xs md:text-sm line-clamp-2 md:line-clamp-3 text-center md:text-justify
+    }
+    .layer a{
+        @apply text-sm md:text-xl mt-2
+    }
+    .admin input, .admin button{
+        @apply w-[90%] md:w-1/2 h-12 p-3 rounded-lg text-center placeholder:text-center
+    }
+    .admin input:focus{
+        @apply outline-red-600 outline-4
+    }
+    .admin label{
+        @apply text-xl mb-1 mt-2
+    }
+    .admin form{
+        @apply flex flex-col justify-center items-center p-5
+    }
+    .admin form h1{
+        @apply  text-3xl mt-10 font-semibold
+    }
+    .login input, .login button{
+        @apply focus:outline-none w-[80%] md:w-[80%] lg:w-[70%] h-[40px] md:h-[50px] p-4 border-red-600 border-l-[5px]
+    }
+}
+
+* {
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+html{
+    scrollbar-width: none;
+}
+
+body{
+    background-color: #CBE4DE;
+}
+
+.intro img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
+/* Animation */
+.m{
+    transition: all;
+    animation: m 1s infinite;
+}
+
+@keyframes m {
+    0%{
+        color: red;
+        transform: scaleY(1.6);
+    }
+    20%{
+        color: #4a95db;
+    }
+    40%{
+        color: #4a95db;
+    }
+    60%{
+        color: #4a95db;
+    }
+    80%{
+        color: #4a95db;
+    }
+    100%{
+        color: #4a95db;
+    }
+    
+}
+.a1{
+    transition: all;
+    animation: a1 1s infinite;
+}
+
+@keyframes a1 {
+    0%{
+        color: #4a95db;
+    }
+    20%{
+        color: red;
+        transform: scaleY(1.6);
+    }
+    40%{
+        color: #4a95db;
+    }
+    60%{
+        color: #4a95db;
+    }
+    80%{
+        color: #4a95db;
+    }
+    100%{
+        color: #4a95db;
+    }
+    
+}
+.a2{
+    transition: all;
+    animation: a2 1s infinite;
+}
+
+@keyframes a2 {
+    0%{
+        color: #4a95db;
+    }
+    20%{
+        color: #4a95db;
+    }
+    40%{
+        color: red;
+        transform: scaleY(1.6);
+    }
+    60%{
+        color: #4a95db;
+    }
+    80%{
+        color: #4a95db;
+    }
+    100%{
+        color: #4a95db;
+    }
+    
+}
+
+.s{
+    transition: all;
+    animation: s 1s infinite;
+}
+
+@keyframes s {
+    0%{
+        color: #4a95db;
+    }
+    20%{
+        color: #4a95db;
+    }
+    40%{
+        color: #4a95db;
+    }
+    60%{
+        color: red;
+        transform: scaleY(1.6);
+    }
+    80%{
+        color: #4a95db;
+    }
+    100%{
+        color: #4a95db;
+    }
+    
+}
+.a3{
+    transition: all;
+    animation: a3 1s infinite;
+}
+
+@keyframes a3 {
+    0%{
+        color: #4a95db;
+    }
+    20%{
+        color: #4a95db;
+    }
+    40%{
+        color: #4a95db;
+    }
+    60%{
+        color: #4a95db;
+    }
+    80%{
+        color: red;
+        transform: scaleY(1.6);
+    }
+    100%{
+        color: #4a95db;
+    }
+    
+}
+
+.d{
+    transition: all;
+    animation: d 1s infinite;
+}
+
+@keyframes d {
+    0%{
+        color: #4a95db;
+    }
+    20%{
+        color: #4a95db;
+    }
+    40%{
+        color: #4a95db;
+    }
+    60%{
+        color: #4a95db;
+    }
+    80%{
+        color: #4a95db;
+    }
+    100%{
+        color: red;
+        transform: scaleY(1.6);
+    }
+    
+}
