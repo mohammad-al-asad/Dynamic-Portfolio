@@ -3,7 +3,7 @@
 Go Live: https://dynamic-portfolio-2-zg6p.onrender.com/<br/>
 Its a Full Stack Express Chat App project.<br/>
 
-<img src=".client/public/images/M-A-Asad.png"/><br/>
+<img src="./client/public/images/M-A-Asad.png"/><br/>
 
 <b>Features:</b>
 
