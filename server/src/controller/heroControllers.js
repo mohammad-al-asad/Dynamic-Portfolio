@@ -1,5 +1,6 @@
 const fileUploaderObj = require("../utility/uploader.js");
 const deleteFiles = require("../utility/deleteFiles.js");
+const heroSection = require("../model/heroSection.js");
 
 function heroUploader(req, res, next) {
   deleteFiles("Hero-Image");

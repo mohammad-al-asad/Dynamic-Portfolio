@@ -59,7 +59,7 @@ function Hero({data}) {
         </div>
         <div
           data-aos="fade-left"
-          className="img w-50 h-[350px] md:w-[350px] md:h-[550px] max-h-[90%] lg:mr-8 self-end"
+          className="img h-[350px] md:h-[550px] max-h-[90%] lg:mr-10 self-end"
         >
           <img
             className="w-full h-full"
