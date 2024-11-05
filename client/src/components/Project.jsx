@@ -3,15 +3,12 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 const server = import.meta.env.VITE_SERVER_URL;
 
 function Project({ data }) {
-  const max = data.length<6? data.length : 6
-  const projects = [];
-  for (let i = 0; i < max; i++) {
-    projects.push(data[i]);
-  }
+
+  data.splice(-1,data.length-6);
   
   return (
     <div className="lg:h-[95vh] h-auto">
-      <div className="heading relative mb-8 md:mb-6 mt-36 flex justify-center items-center">
+      <div className="heading relative mb-8 md:mb-6 mt-32 flex justify-center items-center">
         <h1 className="text-2xl md:text-4xl text-white">
           Lastest <span className="text-red-600">Projects</span>
         </h1>
@@ -26,7 +23,7 @@ function Project({ data }) {
       <div className="projects grid justify-items-center">
         <div className="container grid lg:grid-cols-3 grid-cols-2 gap-4 md:gap-8 p-6 md:p-8">
 
-          {projects.map((project) =>(
+          {data.map((project) =>(
             <div key={project.title} data-aos="zoom-out" data-aos-delay="200" className="box group">
               <img
                 className="w-full h-full group-hover:opacity-70 group-hover:scale-[1.1] transition-all"

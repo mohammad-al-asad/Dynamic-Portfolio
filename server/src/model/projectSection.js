@@ -20,6 +20,12 @@ const schema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  createdAt:{
+    required: true,
+    default:Date.now,
+    immutable: true,
+    type:Date
+  }
 });
 
 const projectSection = mongoose.model("projectSection", schema);

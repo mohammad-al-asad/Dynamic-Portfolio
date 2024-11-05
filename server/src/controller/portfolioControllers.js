@@ -31,7 +31,7 @@ async function portfolioController(req, res, next) {
   };
 
   // ProjectSection
-  const projectObjs = await projectSection.find({});
+  const projectObjs = await projectSection.find().sort({createdAt:-1});
 
   // CvSection
   const CvObjs = await CvModel.find({});

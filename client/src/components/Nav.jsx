@@ -11,7 +11,7 @@ function Nav({data}) {
         </h1>
       </div>
       <div className="btn cursor-pointer bg-red-600 hover:scale-105 transition-all hover:bg-red-800 text-white font-[300] p-2 rounded-sm text-[10px] md:text-xl">
-        <a href={`${server}/CV/${data.CV}`} download>
+        <a target="_blank" href={`${server}/CV/${data.CV}`} download>
           Download CV
         </a>
       </div>

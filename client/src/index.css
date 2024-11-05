@@ -32,7 +32,10 @@
     .admin input, .admin button{
         @apply w-[90%] md:w-1/2 h-12 p-3 rounded-lg text-center placeholder:text-center
     }
-    .admin input:focus{
+    .admin textarea{
+        @apply w-[90%] md:w-1/2 h-20 border-none p-3 rounded-lg text-center
+    }
+    .admin input,textarea:focus{
         @apply outline-red-600 outline-4
     }
     .admin label{

@@ -120,7 +120,7 @@ function Admin({ data, isLoading }) {
             defaultValue={heroObj.professions}
           />
           <label htmlFor="description">Description:</label>
-          <input
+          <textarea
             name="description"
             type="text"
             placeholder="Lorem ipsum amet..."
@@ -155,7 +155,7 @@ function Admin({ data, isLoading }) {
             defaultValue={aboutObj.technologies}
           />
           <label htmlFor="education">Education:</label>
-          <input
+          <textarea
             name="education"
             type="text"
             placeholder="Lorem ipsum amet..."
@@ -163,7 +163,7 @@ function Admin({ data, isLoading }) {
             defaultValue={aboutObj.education}
           />
           <label htmlFor="skill">Skill:</label>
-          <input
+          <textarea
             name="skill"
             type="text"
             placeholder="Lorem ipsum amet..."
@@ -171,7 +171,7 @@ function Admin({ data, isLoading }) {
             defaultValue={aboutObj.skill}
           />
           <label htmlFor="passion">Passion:</label>
-          <input
+          <textarea
             name="passion"
             type="text"
             placeholder="Lorem ipsum amet..."
@@ -203,7 +203,7 @@ function Admin({ data, isLoading }) {
             type="text"
             placeholder="React App"
             required
-            defaultValue={projectObjs[0].title}
+            defaultValue={projectObjs[0]?.title}
           />
           <label htmlFor="description">Description:</label>
           <input
@@ -211,7 +211,7 @@ function Admin({ data, isLoading }) {
             type="text"
             placeholder="Lorem ipsum amet..."
             required
-            defaultValue={projectObjs[0].description}
+            defaultValue={projectObjs[0]?.description}
           />
           <label htmlFor="link">Link:</label>
           <input
@@ -219,7 +219,7 @@ function Admin({ data, isLoading }) {
             type="text"
             placeholder="https://xyz.com/abc"
             required
-            defaultValue={projectObjs[0].link}
+            defaultValue={projectObjs[0]?.link}
           />
           <label htmlFor="project">Image:</label>
           <input

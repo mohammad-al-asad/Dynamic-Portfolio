@@ -23,7 +23,7 @@ const server = import.meta.env.VITE_SERVER_URL
             Technology Resently I Am Working With :
           </h1>
         </div>
-        <div className="btn grid lg:grid-cols-10 grid-cols-4 gap-2 md:gap-4 md:py-2">
+        <div className="btn grid md:grid-cols-5 lg:grid-cols-10 grid-cols-4 gap-2 md:gap-4 md:py-4">
           {data.technologies.map((technology) => (
             <button
               key={technology}
