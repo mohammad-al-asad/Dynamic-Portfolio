@@ -5,7 +5,7 @@ function Footer() {
         Thanks for spending your valuable tiime for visiting my portfolio. You
         can contact with me via the provided links or you can simply send a
         email. <span className="font-[600]">My Address:</span> Fazilpur, Feni,
-        Feni Sadar, Chittagong, Bangladesh.
+        Feni Sadar, Chattogram, Bangladesh.
       </marquee>
     </div>
   );
